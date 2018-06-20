@@ -1,5 +1,5 @@
 # VICTRE
-Virtual Imaging Clinical Trial for Regulatory Evaluation
+![](/images/logo.png) Virtual Imaging Clinical Trial for Regulatory Evaluation
 
 Clinical trails are expensive and delay the regulatory evaluation and early patient access to novel devices. In order to demonstrate an alternative approach, a recent effort at the Division of Imaging, Diagnostics, and Software Reliability at the U.S. Food and Drug Administration (known as the VICTRE project) demonstrated the replication of one such clinical trial using completely in-silico tools and compared results in terms of imaging modality performance between the human trial and the computational trial. The VICTRE trial consisted in imaging 3000 digital breast models in digital mammography and digital breast tomosynthesis system models. On this page we are making all the in silico components of VICTRE freely available to the community, and also sharing the entire VICTRE pipeline as a container which can be run either on locally or in the cloud.
 
@@ -32,7 +32,7 @@ These in-silico patients are then imaged using a state-of-the-art Monte Carlo x-
 * **Reconstruction** \
 VICTRE implemented an filtered back-projection (FBP) reconstruction algorithm for DBT using single-threaded C based on Fessler's cone beam computed tomography (CBCT) reconstruction toolbox.  We modified an extension of the single-threaded C code developed by Leeser \emph{et al.} for reconstruction of CBCT projections to allow for DBT reconstruction.  The modifications account for an x-ray source moving in an arc about the object with a stationary detector with the z-axis of the object normal to the detector plane.  Code and instructions available at [Downloads](https://github.com/DIDSR/VICTRE).  We also have the same code available in Matlab, available at [reconstruction code using Matlab](https://github.com/DIDSR/ReconDBT).
 
-* **Regions/Volumes of interest (ROI/VOIs) extraction** \ 
+* **Regions/Volumes of interest (ROI/VOIs) extraction** \
 After the images are acquired, lesion-present and lesion-absent ROIs are extracted from the DM images (or VOIs from the DBT volumes).  For extracting lesion-absent ROIs, we applied rigorous checks including if the subimages are within the reconstructed volume boundaries and non-overlapping, to find appropriate locations.  This code is available under [Downloads](https://github.com/DIDSR/VICTRE).  This code is developed using Python.
 
 * **Reader models** \
