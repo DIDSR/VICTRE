@@ -14,27 +14,28 @@ parties of the Software, its source code, documentation or compiled executables,
 The VICTRE pipeline
 -------------------
 
-VICTRE replicates various steps in silico of the comparative clinical trial. The pipeline consists of 6 main parts:
+VICTRE replicates various steps in silico of the comparative clinical trial. The pipeline consists of 7 main parts:
 
 * **Phantom generation** \
-Breast models (in silico subjects) are generated using a procedural analytic model developed by Christian Graff.  The model allows for varying patient characteristics including breast shape, glandularity and density, and size.  Details on downloading and running this module can be found at [phantom generation code](https://github.com/DIDSR).
+Breast models (in silico subjects) are generated using a procedural analytic model developed by Christian Graff.  The model allows for varying patient characteristics including breast shape, glandularity and density, and size.  Details on downloading and running this module can be found at [phantom generation code](https://github.com/DIDSR).  This code is written in C++.
   
 * **Phantom compression and cropping** \
-Breast models are then compressed using the open-source finite-element software FeBio and cropped to a fixed volume to speed up loading and fit them in the limited Graphics Processing Units (GPU) memory.  This module can be downloaded from [phantom compression and cropping code](https://github.com/DIDSR).
+Breast models are then compressed using the open-source finite-element software FeBio and cropped to a fixed volume to speed up loading and fit them in the limited Graphics Processing Units (GPU) memory.  This module can be downloaded from [phantom compression and cropping code](https://github.com/DIDSR).  These codes are written in C++.
 
 * **Lesion insertion** \
-Lesions are then inserted in a subset of the compressed breast phantom population to create cancer cases.  The lesion insertion locations are randomly chosen from the list of possible locations given by the breast phantom generation code.  The selected location is then passed through checks to ensure that the lesion is within the phantom boundaries, non-overlapping with tissues like air/muscle/nipple/skin, and non-overlapping with already inserted lesions.  This code is available under [Downloads] (https://github.com/DIDSR/VICTRE).
+Lesions are then inserted in a subset of the compressed breast phantom population to create cancer cases.  The lesion insertion locations are randomly chosen from the list of possible locations given by the breast phantom generation code.  The selected location is then passed through checks to ensure that the lesion is within the phantom boundaries, non-overlapping with tissues like air/muscle/nipple/skin, and non-overlapping with already inserted lesions.  This code is available under [Downloads] (https://github.com/DIDSR/VICTRE).  This code is developed using Python.
 
 * **X-ray Imaging** \ 
-These in-silico patients are then imaged using a state-of-the-art Monte Carlo x-ray transport code (MC-GPU).  We obtained projection images for the two modalities in the VICTRE trial: full-field digital mammography (DM) and digital breast tomosynthesis (DBT).  Details on downloading and running this module can be found at [MC-GPU code](https://github.com/DIDSR).
+These in-silico patients are then imaged using a state-of-the-art Monte Carlo x-ray transport code (MC-GPU).  We obtained projection images for the two modalities in the VICTRE trial: full-field digital mammography (DM) and digital breast tomosynthesis (DBT).  Details on downloading and running this module can be found at [MC-GPU code](https://github.com/DIDSR).  This code is developed using C and CUDA.
 
 * **Reconstruction** \
-VICTRE implemented an filtered back-projection (FBP) reconstruction algorithm for DBT using single-threaded C based on Fessler's cone beam computed tomography (CBCT) reconstruction toolbox.  We modified an extension of the single-threaded C code developed by Leeser \emph{et al.} for reconstruction of CBCT projections to allow for DBT reconstruction.  The modifications account for an x-ray source moving in an arc about the object with a stationary detector with the z-axis of the object normal to the detector plane.  Code and instructions available at [Downloads](https://github.com/DIDSR/VICTRE).
+VICTRE implemented an filtered back-projection (FBP) reconstruction algorithm for DBT using single-threaded C based on Fessler's cone beam computed tomography (CBCT) reconstruction toolbox.  We modified an extension of the single-threaded C code developed by Leeser \emph{et al.} for reconstruction of CBCT projections to allow for DBT reconstruction.  The modifications account for an x-ray source moving in an arc about the object with a stationary detector with the z-axis of the object normal to the detector plane.  Code and instructions available at [Downloads](https://github.com/DIDSR/VICTRE).  We also have the same code available in Matlab and is available at [reconstruction code using Matlab](https://github.com/DIDSR/ReconDBT).
 
-We also have the same code available in Matlab and is available at [reconstruction code using Matlab](https://github.com/DIDSR/ReconDBT).
+* **Regions/Volumes of interest (ROI/VOIs) extraction** \ 
+After the images are acquired, lesion-present and lesion-absent ROIs are extracted from the DM images (or VOIs from the DBT volumes).  For extracting lesion-absent ROIs, we applied rigorous checks including if the subimages are within the reconstructed volume boundaries and non-overlapping, to find appropriate locations.  This code is available under [Downloads] (https://github.com/DIDSR/VICTRE).  This code is developed using Python.
 
-* **Regions/Volumes-of-interest (ROI/VOIs) extraction** \ 
-
+* **Reader models** \
+The ROIs are then interpreted by in silico readers using a location-known exactly paradigm.  Code and instructions of use can be downloaded from [reader models](https://github.com/DIDSR).  This code is written in Matlab.
 
 
 
