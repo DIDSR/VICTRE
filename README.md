@@ -26,7 +26,7 @@ Breast models are then compressed using the open-source finite-element software 
 * **Lesion insertion** \
 Lesions are then inserted in a subset of the compressed breast phantom population to create cancer cases.  The lesion insertion locations are randomly chosen from the list of possible locations given by the breast phantom generation code.  The selected location is then passed through checks to ensure that the lesion is within the phantom boundaries, non-overlapping with tissues like air/muscle/nipple/skin, and non-overlapping with already inserted lesions.  This code is available under [Downloads](https://github.com/DIDSR/VICTRE).  This code is developed using Python.
 
-* **X-ray Imaging** \ 
+* **X-ray Imaging** \
 These in-silico patients are then imaged using a state-of-the-art Monte Carlo x-ray transport code (MC-GPU).  We obtained projection images for the two modalities in the VICTRE trial: full-field digital mammography (DM) and digital breast tomosynthesis (DBT).  Details on downloading and running this module can be found at [MC-GPU code](https://github.com/DIDSR).  This code is developed using C and CUDA.
 
 * **Reconstruction** \
