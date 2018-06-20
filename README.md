@@ -17,9 +17,11 @@ The VICTRE pipeline
 VICTRE replicates various steps in silico of the comparative clinical trial. The pipeline consists of 6 main parts:
 
 * **Phantom generation** \
-  Breast models are The code is avaialble at [phantom generation code](https://github.com/DIDSR).
+Breast models (in silico subjects) are generated using a procedural analytic model developed by Christian Graff. The model allows for varying patient characteristics including breast shape, glandularity and density, and size. Details on downloading and running this module can be found at [phantom generation code](https://github.com/DIDSR).
   
-* Phantom compression and cropping
+* **Phantom compression and cropping** \
+Breast models are then compressed using the open-source finite-element software FeBio and cropped to a fixed volume to speed up loading and fit them in the limited Graphics Processing Units (GPU) memory. This module can be downloaded from [phantom compression and cropping code](https://github.com/DIDSR).
+
 * Lesion insertion
 * X-ray Imaging 
 * Reconstruction
