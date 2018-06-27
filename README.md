@@ -43,3 +43,5 @@ The ROIs are then interpreted by in silico readers using a location-known exactl
 
 The VICTRE container
 --------------------
+
+Although operating systems (OS) and software platforms have evolved throughout the years, application sharing remains a challenge in deploying across many systems. One of the emerging solution to this issue is to use \emph{containers} - a technology which allows the user to package and isolate a set of processes (applications) with their entire run-time environment.
