@@ -1,0 +1,12 @@
+#This file contains the nodenames (in list mode) where jobs are to run
+# For example:
+
+victre1
+victre2
+victre3
+victre4
+victre5
+victre6
+victre7
+victre9
+victre10
