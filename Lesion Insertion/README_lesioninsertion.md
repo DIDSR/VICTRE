@@ -15,18 +15,15 @@ Folder contents
 - /build/lesionInsertion_script.sh - bash script for executing lesion insertion code
 - /build/nodeList.txt - text file containing list of CPU node names available for running lesion insertion jobs.
 - /build/seeds.txt - text file containing list of phantom seeds (taken from phantom filename) indicating the population containing cancers.  Each unique seed represent a different breast model or phantom.
-- /sampleLesions/heteroCalc2_121_100.raw - sample microcalification cluster used for VICTRE.
-- /sampleLesions/mass_-308854003_cropped_166.raw - spiculated mass used for VICTRE.
+- /VICTRE_LesionModels/heteroCalc2_121_100.raw - sample microcalification cluster used for VICTRE.
+- /VICTRE_LesionModels/mass_-308854003_cropped_166.raw - spiculated mass used for VICTRE.
 
 Pre-requisites
 --------------
-- Output files from phantom generation, compression and cropping - pc_SEED_crop.raw.gz, pc_SEED_crop.mhd
-- Lesions as raw files - current version inserts two types of lesions (microcalcification cluster and spiculated mass).
 - Python - this code has been tested on Python 2.7.5.
+- Output files from phantom generation, compression and cropping - pc_SEED_crop.raw.gz, pc_SEED_crop.mhd
+- Lesion models (as raw files) - current version inserts two types of lesion models (microcalcification cluster and spiculated mass).
 - The following input parameters are required to be passed as command line arguments - phantom seed, focal spot of the imaging system, voxel size of the phantom, phantom origin, lowest bounds for phantom coordinate axes, total number of voxels in the phantom in x/y/z, lesion length in voxels for the different types of lesions.
-
-Input parameters
-----------------
 
 Output
 ------
