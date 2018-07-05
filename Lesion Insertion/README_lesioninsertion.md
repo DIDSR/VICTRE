@@ -15,11 +15,15 @@ Folder contents
 - /build/lesionInsertion_script.sh - bash script for executing lesion insertion code
 - /build/nodeList.txt - text file containing list of CPU node names available for running lesion insertion jobs.
 - /build/seeds.txt - text file containing list of phantom seeds (taken from phantom filename) indicating the population containing cancers.  Each unique seed represent a different breast model or phantom.
+- /sampleLesions/heteroCalc2_121_100.raw - sample microcalification cluster used for VICTRE.
+- /sampleLesions/mass_-308854003_cropped_166.raw - spiculated mass used for VICTRE.
 
 Pre-requisites
 --------------
 - Output files from phantom generation, compression and cropping - pc_SEED_crop.raw.gz, pc_SEED_crop.mhd
+- Lesions as raw files - current version inserts two types of lesions (microcalcification cluster and spiculated mass).
 - Python - this code has been tested on Python 2.7.5.
+- The following input parameters are required to be passed as command line arguments - phantom seed, focal spot of the imaging system, voxel size of the phantom, phantom origin, lowest bounds for phantom coordinate axes, total number of voxels in the phantom in x/y/z, lesion length in voxels for the different types of lesions.
 
 Input parameters
 ----------------
@@ -32,4 +36,6 @@ Output
 
 Caveat
 ------
-The current version tries to insert maximum 8 lesions (two types of lesions (microcalcification and spiculated mass); 4 of each type). If you wish to insert a different number of lesions, make the following edits to the code - look for line 'numLesToInsert = 8' (replace 8 with th total number of lesions you want);  'myLesionType = [0,0,0,0,1,1,1,1]' (flags 0 and 1 indicate the two types of lesions and 4 of each type; this order of 0's and 1's dictate what type of lesion is inserted when.  Edit this array to make sure the total number of 0's and 1's equal the number in numLesToInsert.)
+The current version tries to insert maximum 8 lesions (two types of lesions (microcalcification cluster and spiculated mass); 4 of each type). To insert a different number of lesions, make the following edits to the code - look for line 'numLesToInsert = 8' (replace 8 with th total number of lesions you want);  'myLesionType = [0,0,0,0,1,1,1,1]' (flags 0 and 1 indicate the two types of lesions and 4 of each type; this order of 0's and 1's dictate what type of lesion is inserted when.  Edit this array to make sure the total number of 0's and 1's equal the number in numLesToInsert.)
+
+To insert only one type of lesion, give same lesion file name under the section '## Lesion model'. To insert more than two types of lesions, the code need to be understood more deeply for making appropriate edits.
