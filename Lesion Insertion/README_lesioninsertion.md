@@ -21,7 +21,15 @@ Pre-requisites
 - Output files from phantom generation, compression and cropping - pc_SEED_crop.raw.gz, pc_SEED_crop.mhd
 - Python - this code has been tested on Python 2.7.5.
 
+Input parameters
+----------------
+
 Output
 ------
 - pcl_SEED_crop.raw.gz- gzip raw file containing lesion inserted phantoms.
 - pcl_SEED_crop.loc - text file containing the inserted lesion locations (in voxels) for that phantom.
+
+
+Caveat
+------
+The current version tries to insert maximum 8 lesions (two types of lesions (microcalcification and spiculated mass); 4 of each type). If you wish to insert a different number of lesions, make the following edits to the code - look for line 'numLesToInsert = 8' (replace 8 with th total number of lesions you want);  'myLesionType = [0,0,0,0,1,1,1,1]' (flags 0 and 1 indicate the two types of lesions and 4 of each type; this order of 0's and 1's dictate what type of lesion is inserted when.  Edit this array to make sure the total number of 0's and 1's equal the number in numLesToInsert.)
