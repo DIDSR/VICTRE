@@ -1,10 +1,7 @@
-# VICTRE
-![](https://user-images.githubusercontent.com/5750606/41682198-0b250648-74a5-11e8-9578-f93602efa5ab.png)\
-***Virtual Imaging Clinical Trial for Regulatory Evaluation***
+# VICTRE - Lesion Insertion
 
-Clinical trails are expensive and delay the regulatory evaluation and early patient access to novel devices. In order to demonstrate an alternative approach, a recent effort at the Division of Imaging, Diagnostics, and Software Reliability at the U.S. Food and Drug Administration (known as the VICTRE project) demonstrated the replication of one such clinical trial using completely in-silico tools and compared results in terms of imaging modality performance between the human trial and the computational trial. The VICTRE trial consisted in imaging 3000 digital breast models in digital mammography and digital breast tomosynthesis system models. On this page we are making all the in silico components of VICTRE freely available to the community, and also sharing the entire VICTRE pipeline as a container which can be run either on locally or in the cloud.
+This directory contains the lesion insertion python code and build script.
 
-*Core VICTRE team: Aldo Badano, Ph. D., Christian G. Graff, Ph. D., Andreu Badal, Ph. D., Diksha Sharma, M. Sc., Rongping Zeng, Ph. D., Frank W. Samuelson, Ph. D., Stephen Glick, Ph. D., and Kyle J. Myers, Ph. D.*
 
 Disclaimer
 ----------
@@ -13,5 +10,9 @@ This software and documentation (the "Software") were developed at the Food and 
 parties of the Software, its source code, documentation or compiled executables, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic. Further, use of this code in no way implies endorsement by the FDA or confers any advantage in regulatory decisions. Although this software can be redistributed and/or modified freely, we ask that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified. 
 
 
-The VICTRE pipeline
--------------------
+Folder contents
+---------------
+- lesionInsertion.py - lesion insertion python code
+- /build/lesionInsertion_script.sh - bash script for executing lesion insertion code
+- /build/nodeList.txt - text file containing list of CPU node names available for running lesion insertion jobs.
+- /build/seeds.txt - text file containing list of phantom seeds (taken from phantom filename).  Each unique seed represent a different breast model or phantom.
