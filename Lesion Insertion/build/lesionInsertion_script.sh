@@ -56,7 +56,7 @@
 numNodes="GIVE THE TOTAL NUMBER OF CPU NODES AVAILABLE FOR EXECUTION" # number of CPU nodes to run on
 
 
-# get list of phantom seeds in fatty category
+# get phantom seeds list
 seeds=($(cat PATH TO THE SEEDS.TXT FILE))
 
 
