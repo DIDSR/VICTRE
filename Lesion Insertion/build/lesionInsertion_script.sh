@@ -30,17 +30,17 @@
 
 ## INPUT ARGUMENTS (GIVEN AS COMMAND LINE ARGUMENTS SEPARATED BY A BLANK SPACE): 
 # Random seed taken from phantom file name
-# Focal spot locations X (mm)
-# Focal spot locations Y (mm)
-# Focal spot locations Z (mm)
-# Voxel size (mm)
-# Origin for phantom X (mm)
-# Origin for phantom Y (mm)
-# Origin for phantom Z (mm)
+# Focal spot of the imaging detector - location X (mm)
+# Focal spot of the imaging detector - location Y (mm)
+# Focal spot of the imaging detector - location Z (mm)
+# Voxel size for phantom (mm)
+# Origin of the cropped phantom X (mm)
+# Origin of the cropped phantom Y (mm)
+# Origin of the cropped phantom Z (mm)
 # Minimum voxel number in X (lowest number on phantom coordinate axes)
 # Minimum voxel number in Y
 # Minimum voxel number in Z 
-# Total number of voxels in X
+# Total number of voxels in X (phantom)
 # Total number of voxels in Y
 # Total number of voxels in Z
 # Lesion length for calc cluster (voxels)
