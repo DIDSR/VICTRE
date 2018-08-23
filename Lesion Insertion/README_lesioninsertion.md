@@ -13,6 +13,7 @@ parties of the Software, its source code, documentation or compiled executables,
 Folder contents
 ---------------
 - lesionInsertion.py - lesion insertion python code
+- README_lesioninsertion.md - this file.
 - /build/lesionInsertion_script.sh - bash script for executing the lesion insertion code.
 - /VICTRE_LesionModels/heteroCalc2_121_100.raw - sample microcalification cluster used for VICTRE.
 - /VICTRE_LesionModels/mass_-308854003_cropped_166.raw - spiculated mass used for VICTRE.
