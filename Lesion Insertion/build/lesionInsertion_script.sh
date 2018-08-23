@@ -1,10 +1,11 @@
 #*********************************************************************************************************************************
 #*********************************************************************************************************************************
 #
+#				VICTRE (VIRTUAL IMAGING CLINICAL TRIAL FOR REGULATORY EVALUATION)
 #						LESION INSERTION SCRIPT
 #
 # AUTHOR: 	DIKSHA SHARMA
-#			DIKSHA.SHARMA@FDA.HHS.GOV
+#		DIKSHA.SHARMA@FDA.HHS.GOV
 #
 #*********************************************************************************************************************************
 #*********************************************************************************************************************************
@@ -25,11 +26,10 @@
 #
 ##################################################################################################################################
 
-## THIS SCRIPT INSERTS LESIONS - DISTRIBUTING THE NUMBER OF PHANTOMS ON THE AVAILABLE CPU NODES (LIST GIVEN IN nodeList.txt).
-## REQUIRES nodeList.txt AND seeds.txt FILES.
+## THIS SCRIPT INSERTS LESIONS IN A PHANTOM
 
 ## INPUT ARGUMENTS (GIVEN AS COMMAND LINE ARGUMENTS SEPARATED BY A BLANK SPACE): 
-# Random seed taken from phantom file name
+# Random seed taken from Tthe phantom file name
 # Focal spot of the imaging detector - location X (mm)
 # Focal spot of the imaging detector - location Y (mm)
 # Focal spot of the imaging detector - location Z (mm)
@@ -47,38 +47,30 @@
 # Lesion length for spiculated mass (voxels)
 # Min limit on X dimension within the breast to make sure that lesions are not close to the chest wall
 
-## 	EXECUTION (EXAMPLE GIVEN ON LINE 79)
+## 	EXECUTION
 #	lesinsertCmd="time python PATH TO THE LESION INSERTION CODE/lesionInsertion.py $thisSeed FOCAL_SPOT_X FOCAL_SPOT_Y FOCAL_SPOT_Z $var1 $var2 $var3 $var4 MIN_X MIN_Y MIN_Z $var5 $var6 $var7 LESLEN_CALC LESLEN_MASS MIN_X_CHESTWALL_LIMIT"
 
 #!/bin/bash
 
-# start index from arg
-numNodes="GIVE THE TOTAL NUMBER OF CPU NODES AVAILABLE FOR EXECUTION" # number of CPU nodes to run on
-
-
-# get phantom seeds list
-seeds=($(cat PATH TO THE SEEDS.TXT FILE))
-
-
-for((i=$1; i<${#seeds[@]}; i+=$numNodes)) do 	# DISTRIBUTE JOBS ON AVAILABLE CPU NODES
-	thisSeed=${seeds[$i]}						
 	
-	# EXTRACT INFORMATION FROM pc_SEED_crop.mhd FILE
-	temp1=`sed -n 's/^ *ElementSpacing *= *//p' "PATH TO THE FOLLOWING FILE/pc_"$thisSeed"_crop.mhd"`
-	var1=$(echo $temp1 | cut -d ' ' -f1)
+thisSeed="GIVE THE SEED NUMBER FOR THE PHANTOM TO RUN - TAKEN FROM THE PHANTOM FILE NAME"
+	
+# EXTRACT INFORMATION FROM pc_SEED_crop.mhd FILE
+temp1=`sed -n 's/^ *ElementSpacing *= *//p' "PATH TO THE FOLLOWING FILE/pc_"$thisSeed"_crop.mhd"`
+var1=$(echo $temp1 | cut -d ' ' -f1)
 
-	temp2=`sed -n 's/^ *Offset *= *//p' "PATH TO THE FOLLOWING FILE/pc_"$thisSeed"_crop.mhd"`
-	var2=$(echo $temp2 | cut -d ' ' -f1)
-	var3=$(echo $temp2 | cut -d ' ' -f2)
-	var4=$(echo $temp2 | cut -d ' ' -f3)
+temp2=`sed -n 's/^ *Offset *= *//p' "PATH TO THE FOLLOWING FILE/pc_"$thisSeed"_crop.mhd"`
+var2=$(echo $temp2 | cut -d ' ' -f1)
+var3=$(echo $temp2 | cut -d ' ' -f2)
+var4=$(echo $temp2 | cut -d ' ' -f3)
 
-	temp3=`sed -n 's/^ *DimSize *= *//p' "PATH TO THE FOLLOWING FILE/pc_"$thisSeed"_crop.mhd"`
-	var5=$(echo $temp3 | cut -d ' ' -f1)
-	var6=$(echo $temp3 | cut -d ' ' -f2)
-	var7=$(echo $temp3 | cut -d ' ' -f3)
+temp3=`sed -n 's/^ *DimSize *= *//p' "PATH TO THE FOLLOWING FILE/pc_"$thisSeed"_crop.mhd"`
+var5=$(echo $temp3 | cut -d ' ' -f1)
+var6=$(echo $temp3 | cut -d ' ' -f2)
+var7=$(echo $temp3 | cut -d ' ' -f3)
 
-	lesinsertCmd="time python PATH TO THE LESION INSERTION CODE/lesionInsertion.py $thisSeed 0 69 630 $var1 $var2 $var3 $var4 0 0 0 $var5 $var6 $var7 100 166 115"
-	$lesinsertCmd
+lesinsertCmd="time python PATH TO THE LESION INSERTION CODE/lesionInsertion.py $thisSeed 0 69 630 $var1 $var2 $var3 $var4 0 0 0 $var5 $var6 $var7 100 166 115"
+$lesinsertCmd
 
-done
+
 
