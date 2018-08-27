@@ -22,7 +22,7 @@ Folder contents
 Pre-requisites
 --------------
 - Python - this code has been tested on Python 2.7.5.
-- Output files from phantom generation, compression and cropping - pc_SEED_crop.raw.gz, pc_SEED_crop.mhd
+- Output files from phantom generation, compression and cropping - pc_SEED_crop.raw.gz, pc_SEED_crop.mhd (This SEED is unique to each phantom and is used as the initial random seed for phantom generation. We use this SEED to indicate which phantom to process).
 - Lesion models (as raw files) - current version inserts two types of lesion models (microcalcification cluster and spiculated mass).
 - The following input parameters are required to be passed as command line arguments - phantom seed, focal spot of the imaging system, voxel size of the phantom, phantom origin, lowest bounds for phantom coordinate axes, total number of voxels in the phantom in x/y/z, lesion length in voxels for the different types of lesions.
 
