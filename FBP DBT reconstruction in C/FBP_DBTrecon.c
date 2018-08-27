@@ -894,7 +894,7 @@ int main(int argc, char * argv[])
 
 ///////////////FLAT FIELD FILE ////////////////////////////
 
-  strcpy(ffFile,"PATH FOR THE CONCATENATED FLATFIELD PROJECTIONS RAW FILE/flatfield_25proj.raw");
+  strcpy(ffFile,"PATH TO THE CONCATENATED FLATFIELD PROJECTIONS RAW FILE/flatfield_25proj.raw");
 
 ///////////////PHANTOM DATA///////////////////////////////
 
@@ -903,7 +903,7 @@ int main(int argc, char * argv[])
     {   
       //      fscanf (fp, "%s\t%s\n", inFile, outFile);
       sprintf(inFile, "PATH TO THE CONCATENATED DBT PROJECTIONS FILE/DBT_%s_25proj.raw", ph_seed);      //set path for the MC-GPU input projections
-      sprintf(outFile, "PATH TO SAVE THE OUTPUT RECONSTRUCTED FILE/DBT_%s_recon.raw", ph_seed); //set path for the reconstructed output volumes
+      sprintf(outFile, "PATH TO THE OUTPUT RECONSTRUCTED FILE/DBT_%s_recon.raw", ph_seed); //set path for the reconstructed output volumes
       printf("PHANTOM NAME %s\n", inFile);
       printf("O/P FILENAME NAME %s\n", outFile);
 
