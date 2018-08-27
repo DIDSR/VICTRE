@@ -29,9 +29,7 @@
 ## THIS SCRIPT INSERTS LESIONS IN A PHANTOM
 
 ## INPUT ARGUMENTS (GIVEN AS COMMAND LINE ARGUMENTS SEPARATED BY A BLANK SPACE): 
-# Random seed taken from Tthe phantom file name
-  - this is a unique number per phantom and is used as the initial random seed for its generation.
-    This is saved in the phantom file name and is used to tell the ROI extraction code which phantom to process.
+# Random seed taken from Tthe phantom file name  - this is a unique number per phantom and is used as the initial random seed for its generation. This is saved in the phantom file name and is used to tell the ROI extraction code which phantom to process.
 # Focal spot of the imaging detector - location X (mm)
 # Focal spot of the imaging detector - location Y (mm)
 # Focal spot of the imaging detector - location Z (mm)
