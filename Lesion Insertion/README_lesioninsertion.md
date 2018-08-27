@@ -1,5 +1,5 @@
 # VICTRE - Lesion Insertion
-* For questions, please write to Diksha Sharma at diksha.sharma@fda.hhs.gov *
+*For questions, please write to Diksha Sharma at diksha.sharma@fda.hhs.gov*
 
 This directory contains the lesion insertion python code and build script. This part of the pipeline comes after the phantom is compressed and cropped. Lesions are inserted in compressed breast phantoms to create cancer cases. The lesion insertion locations are randomly chosen from the list of possible locations given by the breast phantom generation code. The selected location is then passed through checks to ensure that the lesion is within the phantom boundaries, non-overlapping with tissues like air/muscle/nipple/skin, and non-overlapping with already inserted lesions.
 
