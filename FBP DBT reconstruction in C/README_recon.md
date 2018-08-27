@@ -18,7 +18,6 @@ Folder contents
 - Source codes - FBP_DBTrecon.c/.h
 - Makefile - to compile the codes
 - reconFBP_script.sh - bash script for execution
-- sample-input-output-files  - directory containing example input and output file to help user run and verify the results
 - cbct_code - Cone beam CBCT reconstruction code developed by Brock.  Modified by Aunnasha for use with VICTRE.
 - Readme - this file
 
@@ -26,10 +25,7 @@ Pre-requisites
 --------------
 
 - FFTW3 package needs to be installed (on Ubuntu, use the command 'sudo apt-get install libfftw3-dev')
-- Flatfield projection file (all projections concatenated in a single raw file).
-- DBT projections (all projections concatenated in a single raw file).
-
-
+- Needs the following inputs: flatfield projection data, DBT projections for the phantom, and phantom dimensions as voxels (reconFBP_script.sh script needs pc_seed_crop.mhd file for obtaining this information for the phantom).
 
 Input arguments to the executable (given from command line separated by a blank space)
 --------------------------------------------------------------------------------------
