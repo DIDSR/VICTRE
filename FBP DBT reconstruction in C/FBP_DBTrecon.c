@@ -894,7 +894,7 @@ int main(int argc, char * argv[])
 
 ///////////////FLAT FIELD FILE ////////////////////////////
 
-  strcpy(ffFile,"./sample-input-output-files/input/flatfield_3000x1500pixels_25proj.raw");
+  strcpy(ffFile,"PATH FOR THE CONCATENATED FLATFIELD PROJECTIONS RAW FILE/flatfield_25proj.raw");
 
 ///////////////PHANTOM DATA///////////////////////////////
 
@@ -902,8 +902,8 @@ int main(int argc, char * argv[])
   for (phntm = 0; phntm < 1; phntm++)      // run for phantom containing ph_seed
     {   
       //      fscanf (fp, "%s\t%s\n", inFile, outFile);
-      sprintf(inFile, "./sample-input-output-files/input/DBT_pc_%s_crop.raw.gz-3000x1500pixels_25proj.raw", ph_seed);      //set path for the MC-GPU input projections
-      sprintf(outFile, "./sample-input-output-files/output/DBT_pc_%s_recon.raw", ph_seed); //set path for the reconstructed output volumes
+      sprintf(inFile, "PATH TO THE CONCATENATED DBT PROJECTIONS FILE/DBT_%s_25proj.raw", ph_seed);      //set path for the MC-GPU input projections
+      sprintf(outFile, "PATH TO SAVE THE OUTPUT RECONSTRUCTED FILE/DBT_%s_recon.raw", ph_seed); //set path for the reconstructed output volumes
       printf("PHANTOM NAME %s\n", inFile);
       printf("O/P FILENAME NAME %s\n", outFile);
 
