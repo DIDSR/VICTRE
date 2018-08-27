@@ -53,19 +53,19 @@ Input arguments to the executable (given from command line separated by a blank 
 Executing the code
 -------------------
 
->> The Makefile in each subfolder compiles the FBP_DBTrecon.c and creates executable FBP_DBTrecon. 
+The Makefile in each subfolder compiles the FBP_DBTrecon.c and creates executable FBP_DBTrecon. 
 
 $ make
 $ ./reconFBP_script.sh 
 
->> This code outputs the reconstructed DBT image as a raw file (64 bit real, Little-endian byte format). 
+This code outputs the reconstructed DBT image as a raw file (64 bit real, Little-endian byte format). 
 We have a sample output placed under sample-input-output-files/output/DBT_pc_36008688_recon-example.raw, and named it so that the code does not overwrite it when run with default parameters.
 
 Visualizing the output
 ----------------------
 
->> There are several ways to view the .raw reconstructed slices. The open source software, ImageJ, is the easiest way. 
->> To use ImageJ for visualization, it is important to know the dimesions of the output file, which is printed out during the execution of the code as nx, ny and nz. 
+There are several ways to view the .raw reconstructed slices. The open source software, ImageJ, is the easiest way. 
+To use ImageJ for visualization, it is important to know the dimesions of the output file, which is printed out during the execution of the code as nx, ny and nz. 
 
 ImageJ input parameters: 
 Image Type: 64-bit real
@@ -74,17 +74,17 @@ Height: ny
 Number of images: nz
 Check the box: "Little-endian byte order"
 
->> Use the slider to view the different reconstructed layers.
+Use the slider to view the different reconstructed layers.
 
 Changes from Leeser et. al's codes
 ----------------------------------
 
->> Interpolation of DBT projections for DBT reconstruction
->> Addition of hanning filter
->> Corrected existing hanning filter function
->> Corrected indexing problem in back-projection function
->> corrected usage of fft package
->> corrected formula in back-projection algorithm
+- Interpolation of DBT projections for DBT reconstruction
+- Addition of hanning filter
+- Corrected existing hanning filter function
+- Corrected indexing problem in back-projection function
+- corrected usage of fft package
+- corrected formula in back-projection algorithm
 
 
 
