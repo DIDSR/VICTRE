@@ -1,6 +1,7 @@
 
-# VICTRE - DIGITAL BREAST TOMOSYNTHESIS RECONSTRUCTION (FBP) in C
+# VICTRE - Digital Breast Tomosynthesis (FBP) in C
 *AUTHORS: AUNNASHA SENGUPTA, RONGPING ZENG, DIKSHA SHARMA, ALDO BADANO (US FOOD AND DRUG ADMINISTRATION)*
+
 *QUESTIONS TO BE DIRECTED TO: DIKSHA.SHARMA@FDA.HHS.GOV*
 
 This freely available code performs 3D Filtered Back-Projection (FBP) reconstruction for Digital Breast Tomosynthesis (DBT) using single threaded C. 
