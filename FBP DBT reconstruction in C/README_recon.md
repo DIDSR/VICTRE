@@ -56,6 +56,7 @@ Executing the code
 The Makefile in each subfolder compiles the FBP_DBTrecon.c and creates executable FBP_DBTrecon. 
 
 $ make
+
 $ ./reconFBP_script.sh 
 
 This code outputs the reconstructed DBT image as a raw file (64 bit real, Little-endian byte format). 
