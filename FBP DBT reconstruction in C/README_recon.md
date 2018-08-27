@@ -27,6 +27,7 @@ Pre-requisites
 - FFTW3 package needs to be installed (on Ubuntu, use the command 'sudo apt-get install libfftw3-dev')
 - Needs the following inputs: flatfield projection data, DBT projections for the phantom, and phantom dimensions as voxels (reconFBP_script.sh script needs pc_seed_crop.mhd file for obtaining this information for the phantom).
 - Flatfield and DBT projections data format: RAW file, 32-bit real, little-endian byte order. All angle projections concatenated in a single raw file (one file each for flatfield and DBT projections).
+- We are looking into ways to share example input/output files.  We are not able to upload them here due to size restrictions.
 
 Input arguments to the executable (given from command line separated by a blank space)
 --------------------------------------------------------------------------------------
@@ -53,14 +54,13 @@ Input arguments to the executable (given from command line separated by a blank 
 Executing the code
 -------------------
 
-The Makefile in each subfolder compiles the FBP_DBTrecon.c and creates executable FBP_DBTrecon. 
+The Makefile in each subfolder compiles the FBP_DBTrecon.c and creates executable FBP_DBTrecon. This code outputs the reconstructed DBT image as a raw file (64 bit real, Little-endian byte format). 
 
 $ make
 
 $ ./reconFBP_script.sh 
 
-This code outputs the reconstructed DBT image as a raw file (64 bit real, Little-endian byte format). 
-We have a sample output placed under sample-input-output-files/output/DBT_pc_36008688_recon-example.raw, and named it so that the code does not overwrite it when run with default parameters.
+
 
 Visualizing the output
 ----------------------
