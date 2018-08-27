@@ -1,6 +1,6 @@
 
 # VICTRE - Digital Breast Tomosynthesis (FBP) in C
-*Authors: Aunnasha Sengupta, Rongping Zeng, Diksha Sharma, Aldo Badano (US FOOD AND DRUG ADMINISTRATION)*
+*Authors: Aunnasha Sengupta, Rongping Zeng, Diksha Sharma, Aldo Badano (US Food and Drug Administration)*
 
 *Questions should be directed to: diksha.sharma@fda.hhs.gov*
 
