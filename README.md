@@ -4,7 +4,7 @@
 
 Clinical trails are expensive and delay the regulatory evaluation and early patient access to novel devices. In order to demonstrate an alternative approach, a recent effort at the Division of Imaging, Diagnostics, and Software Reliability at the U.S. Food and Drug Administration (known as the VICTRE project) demonstrated the replication of one such clinical trial using completely in-silico tools and compared results in terms of imaging modality performance between the human trial and the computational trial. The VICTRE trial consisted in imaging 3000 digital breast models in digital mammography and digital breast tomosynthesis system models. On this page we are making all the in silico components of VICTRE freely available to the community, and also sharing the entire VICTRE pipeline as a container which can be run either on locally or in the cloud.
 
-*Core VICTRE team: Aldo Badano, Ph. D., Christian G. Graff, Ph. D., Andreu Badal, Ph. D., Diksha Sharma, M. Sc., Rongping Zeng, Ph. D., Frank W. Samuelson, Ph. D., Stephen Glick, Ph. D., and Kyle J. Myers, Ph. D.*
+*VICTRE team: Aldo Badano, Ph. D., Christian G. Graff, Ph. D., Andreu Badal, Ph. D., Diksha Sharma, M. Sc., Rongping Zeng, Ph. D., Frank W. Samuelson, Ph. D., Stephen Glick, Ph. D., and Kyle J. Myers, Ph. D.*
 
 Disclaimer
 ----------
@@ -38,7 +38,6 @@ After the images are acquired, lesion-present and lesion-absent ROIs are extract
 
 * **Reader models** \
 The ROIs are then interpreted by in silico readers using a location-known exactly paradigm.  Code and instructions of use can be downloaded from [reader models](https://github.com/DIDSR).  This code is written in Matlab.
-
 
 
 The VICTRE container
