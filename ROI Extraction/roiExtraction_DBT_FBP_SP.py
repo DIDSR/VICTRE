@@ -5,7 +5,7 @@
 #						ROI EXTRACTION (DBT - SIGNAL PRESENT)
 #
 # AUTHOR: 	DIKSHA SHARMA
-#			DIKSHA.SHARMA@FDA.HHS.GOV
+#		DIKSHA.SHARMA@FDA.HHS.GOV
 #
 # GITHUB LINK: 	https://github.com/DIDSR/VICTRE
 #
@@ -101,9 +101,9 @@ for ii in range(0,numloc):
 
 	
 
-	## Since we know the lesion location in phantom voxels, so calculate distance (in voxels) from the origin (vox_loc - 0) [given origin vox in phantom = 0,0,0]
+    ## Since we know the lesion location in phantom voxels, so calculate distance (in voxels) from the origin (vox_loc - 0) [given origin vox in phantom = 0,0,0]
     ## convert distance from vox to mm = (vox_loc-0)* voxelsize
-	## convert this distance to DBT pixels by dividing with appropriate pixelsize (x=y=DBT pixelsize; z=slice thickness).
+    ## convert this distance to DBT pixels by dividing with appropriate pixelsize (x=y=DBT pixelsize; z=slice thickness).
     ## This would be DBT pixel location assuming the origin point for DBT is also 0,0,0.
 
 	x1[0,ii] = (int)((lesX * args.voxelsize)/(args.pixelsize)) # in recon voxels
