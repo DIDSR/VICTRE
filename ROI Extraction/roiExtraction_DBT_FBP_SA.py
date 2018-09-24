@@ -5,7 +5,7 @@
 #						ROI EXTRACTION (DBT - SIGNAL ABSENT)
 #
 # AUTHOR: 	DIKSHA SHARMA
-#			DIKSHA.SHARMA@FDA.HHS.GOV
+#		DIKSHA.SHARMA@FDA.HHS.GOV
 #
 # GITHUB LINK: 	https://github.com/DIDSR/VICTRE
 #
@@ -161,7 +161,7 @@ else:
 	myoddflag[0,1] = 1;
 
 
-##### if loop to insert 8 lesions
+##### if loop to insert lesions
 insertedLesions = 0	# variable to indicate number of inserted lesions so far
 checkFail = 0	# flag to indicate if lesion passed the checks or not (0 pass or not tried yet, 1 fail)
 maskflag = 0;	# flag used for checking overlap in maskimg, 1 if ROI available (overlap < 10%), 0 if ROI not available due to > 10% overlap
@@ -181,8 +181,6 @@ for ii in range (0,myhalfnum):
 for ii in range (myhalfnum,args.totnumROI):
 	myLesionType[ii] = 1 	# indicating ROI size 'roisizeSpic'
 	
-#myLesionType = [0,0,0,0,0,0,1,1,1,1,1,1]	# 12 ROIs - 6 corresponding to calcs (0) and 6 to masses (1) - HARDCODED! 
-
 ctr1 = 0;	# counter for myLesionType
 eliminated_locs = 0     # counter to check how many locations eliminated
 
