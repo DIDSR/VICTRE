@@ -114,7 +114,7 @@ for ii in range(0,numloc):
 	## LESION LOCATIONS FROM .LOC FILE HAS LOCATIONS IN VOXELS 		
 	## CONVERT LESION VOXELS TO MM (CROPPING - PHANTOM COOR SYSTEM)
 	## (lesion_vox - origin_vox)*voxelsize + origin_mm 
-    lesX_mm = (lesX-0)*args.voxelsize + args.orgX
+    	lesX_mm = (lesX-0)*args.voxelsize + args.orgX
 	lesY_mm = (lesY-0)*args.voxelsize + args.orgY
 	lesZ_mm = (lesZ-0)*args.voxelsize + args.orgZ
 
@@ -123,28 +123,28 @@ for ii in range(0,numloc):
 	## Translate lesion (mm) from phantom to MCGPU coor system
 	## Phantom origin [0,0,0] vox or (X1,Y1,Z1) mm lies at lower left back corner of phantom.
 	## Detector (mcgpu) origin lies in the same location with (0,0) mm. Remember this is not the top left corner (x=0 at chest wall) of detector.
-    ## Detector origin (mm) coincides with the voxel origin (0,0,0 vox or X1,Y1,Z1 mm) of cropped phantom. 
+    	## Detector origin (mm) coincides with the voxel origin (0,0,0 vox or X1,Y1,Z1 mm) of cropped phantom. 
 	
 	## so a point (a,b,c) mm in phantom is translated as (a-X1, b-Y1, c-Z1) mm in detector space.
 	## The x,y,z axis directions are same for both phantom and detector, thus no flipping of xyz coordinates between the two systems.
 	
 	crop_phan_lenY_mm = args.totvoxY * args.voxelsize # cropped phantom length in Y dimension (mm)
-    det_lenY_mm = args.lendetY_pix * args.pixelsize # detector length in Y dimension (mm)
+    	det_lenY_mm = args.lendetY_pix * args.pixelsize # detector length in Y dimension (mm)
 
-    # translating from phantom to detector (mm)
+    	# translating from phantom to detector (mm)
 	lesX_det_mm = lesX_mm - args.orgX
 	lesY_det_mm = lesY_mm - args.orgY
 	lesZ_det_mm = lesZ_mm - args.orgZ  # this indicates lesZ in detector space in mm
    
 
 	## WITH Projection
-    alpha = (args.det_z_loc - args.fs_z)/(lesZ_det_mm - args.fs_z)   ## since detector lies at z=0. line equation is f+alpha(l-f) where alpha is (z_det-fz)/(lz-fz)
+    	alpha = (args.det_z_loc - args.fs_z)/(lesZ_det_mm - args.fs_z)   ## since detector lies at z=0. line equation is f+alpha(l-f) where alpha is (z_det-fz)/(lz-fz)
 	projX_det_mm = args.fs_x + (alpha)*(lesX_det_mm - args.fs_x)   # mm
 	projY_det_mm = args.fs_y + (alpha)*(lesY_det_mm - args.fs_y)   # mm
 
 	## Calculate detector origin in pixels
 	## Top left corner of detector is (0,0) pixels but this is not the origin
-    ## Detector origin (0,0) mm is at x=0 pixels, y = {[(det_len_y_mm - crop_phan_len_y_mm)/2]/pixelsize} pixels
+    	## Detector origin (0,0) mm is at x=0 pixels, y = {[(det_len_y_mm - crop_phan_len_y_mm)/2]/pixelsize} pixels
 	det_orgX_pix = 0
 	det_orgY_pix = ((det_lenY_mm - crop_phan_lenY_mm)*0.5)/args.pixelsize
 
