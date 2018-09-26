@@ -24,7 +24,7 @@ Pre-requisites
 Execution
 ---------
 - The build/ folder contains scripts for execution - each script requires the phantom seed number (taken from its filename; this seed number is unique per phantom and thus determines which phantom to run) to be provided; user must modify other input arguments for their runs accordingly.
-- The user needs to insert the path to input and output files in the source codes and build scripts.
+- The user needs to insert the path to input and output files (such as path to phantom raw image, potential lesion locations file, MC-GPU projection image as raw, flatfield image as raw, folder where extracted ROIs and their locations will be saved) in the source codes and build scripts.
 
 Visualization of ROI/VOIs
 -------------------------
