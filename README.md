@@ -53,7 +53,7 @@ Although operating systems (OS) and software platforms have evolved throughout t
 
 Since each part of the VICTRE pipeline has its own codes and related dependencies, it is challenging to integrate them together in one package that would run on a variety of servers. For this we plan to make use of Docker containers by including all required dependencies under one environment for easy installation and deployment. Docker provides operating system level virtualization on Linux and Windows platforms. The environment for the docker containers is defined by a Dockerfile which allows different servers to install the same set of libraries and dependencies as needed. 
 
-We are currently running into problems integrating the MC-GPU code (which runs on the GPUs) in the Docker. We will make the VICTRE container available as soon as this issue gets resolved.
+We are currently encountering problems integrating the MC-GPU code (which runs on the GPUs) in the Docker. We will make the VICTRE container available as soon as this issue gets resolved.
 
 
 VICTRE image datasets
