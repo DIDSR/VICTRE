@@ -46,14 +46,6 @@ After the images are acquired, lesion-present and lesion-absent ROIs are extract
 The ROIs are then interpreted by in silico readers using a location-known exactly paradigm.  Code and instructions of use can be downloaded from [reader models](https://github.com/DIDSR/VICTRE_MO).  This code is written in Matlab.
 
 
-The VICTRE container
---------------------
-
-Although operating systems (OS) and software platforms have evolved throughout the years, application sharing remains a challenge in deploying across many systems. One of the emerging solution to this issue is to use *containers* - a technology which allows the user to package and isolate a set of processes (applications) with their entire run-time environment.
-
-Since each part of the VICTRE pipeline has its own codes and related dependencies, it is challenging to integrate them together in one package that would run on a variety of servers. For this we plan to make use of Docker containers by including all required dependencies under one environment for easy installation and deployment. Docker provides operating system level virtualization on Linux and Windows platforms. The environment for the docker containers is defined by a Dockerfile which allows different servers to install the same set of libraries and dependencies as needed. We will make the VICTRE container available soon.
-
-
 VICTRE image datasets
 ---------------------
 
