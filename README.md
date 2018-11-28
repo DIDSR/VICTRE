@@ -30,6 +30,9 @@ Breast models are then compressed using the open-source finite-element software 
 * **Phantom cropping - COMING SOON** \
 Breast models are then cropped to a fixed volume to speed up loading and fit them in the limited Graphics Processing Units (GPU) memory. This tool is written in C++ and can be downloaded from [phantom cropping code](https://github.com/DIDSR). 
 
+* **Breast Lesion - COMING SOON** \
+
+
 * **Lesion insertion** \
 Lesions are then inserted in a subset of the compressed breast phantom population to create cancer cases.  The lesion insertion locations are randomly chosen from the list of possible locations given by the breast phantom generation code.  The selected location is then passed through checks to ensure that the lesion is within the phantom boundaries, non-overlapping with tissues like air/muscle/nipple/skin, and non-overlapping with already inserted lesions.  This code is available under [Lesion Insertion](https://github.com/DIDSR/VICTRE/tree/master/Lesion%20Insertion).  This code is developed using Python.
 
