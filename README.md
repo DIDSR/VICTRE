@@ -22,7 +22,9 @@ The VICTRE pipeline
 VICTRE replicates various steps in silico of the comparative clinical trial. The pipeline consists of 9 components:
 
 * **breastPhantom - COMING SOON** \
-Breast models (in silico subjects) are generated using a procedural analytic model.  The model allows for varying patient characteristics including breast shape, glandularity and density, and size.  Details on downloading and running this module can be found at [phantom generation code](https://github.com/DIDSR).  This code is written in C++.
+Breast models (in silico subjects) are generated using a procedural analytic model.  The model allows for varying patient characteristics including breast shape, glandularity and density, and size.
+  - source code is available [here](https://github.com/DIDSR/breastPhantom).
+  - documentation is available in html and pdf formats.
   
 * **Phantom compression - COMING SOON** \
 Breast models are then compressed using the open-source finite-element software FeBio.  This tool can be downloaded from [phantom compression code](https://github.com/DIDSR).  These codes are written in C++.
