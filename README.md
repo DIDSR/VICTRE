@@ -19,9 +19,9 @@ parties of the Software, its source code, documentation or compiled executables,
 The VICTRE pipeline
 -------------------
 
-VICTRE replicates various steps in silico of the comparative clinical trial. The pipeline consists of 7 main parts:
+VICTRE replicates various steps in silico of the comparative clinical trial. The pipeline consists of 9 components:
 
-* **Phantom generation - COMING SOON** \
+* **breastPhantom - COMING SOON** \
 Breast models (in silico subjects) are generated using a procedural analytic model.  The model allows for varying patient characteristics including breast shape, glandularity and density, and size.  Details on downloading and running this module can be found at [phantom generation code](https://github.com/DIDSR).  This code is written in C++.
   
 * **Phantom compression - COMING SOON** \
