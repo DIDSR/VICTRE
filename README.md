@@ -21,7 +21,7 @@ The VICTRE pipeline
 
 VICTRE replicates various steps in silico of the comparative clinical trial. The pipeline consists of 9 components:
 
-* **breastPhantom - anthropomorphic breast model COMING SOON** \
+* **breastPhantom - anthropomorphic breast model - COMING SOON** \
 Breast models (in silico subjects) are generated using a procedural analytic model.  The model allows for varying patient characteristics including breast shape, glandularity and density, and size.
   - source code is available [here](https://github.com/DIDSR/breastPhantom).
   - documentation is available in html and pdf formats.
@@ -31,11 +31,15 @@ Breast models are then compressed with use of open-source finite-element softwar
   - source code is available [here](https://github.com/DIDSR/breastCompress).
   - documentation is available in [html](https://breastcompress.readthedocs.io/en/latest/) and [pdf](https://readthedocs.org/projects/breastcompress/downloads/pdf/latest/) formats.
 
-* **Phantom cropping - COMING SOON** \
-Breast models are then cropped to a fixed volume to speed up loading and fit them in the limited Graphics Processing Units (GPU) memory. This tool is written in C++ and can be downloaded from [phantom cropping code](https://github.com/DIDSR). 
+* **breastCrop - phantom cropping - COMING SOON** \
+Breast models are then cropped to a fixed volume to speed up loading and fit them in the limited Graphics Processing Units (GPU) memory.
+  - source code is available [here](https://github.com/DIDSR/breastCrop).
+  - documentation is available in [html](https://breastcrop.readthedocs.io/en/latest/) and [pdf](https://readthedocs.org/projects/breastcrop/downloads/pdf/latest/) formats.
 
-* **Breast Lesion - COMING SOON** \
-Code to generate random spiculated breast masses.
+* **breastMass - cancer mass model - COMING SOON** \
+Breast masses are generated using a procedural generation code.  This model allows for variations in mass size, shape, amount of spiculations, and other characteristics.
+  - source code is available here.
+  - documentation is available in html and pdf formats.
 
 * **Lesion insertion** \
 Lesions are then inserted in a subset of the compressed breast phantom population to create cancer cases.  The lesion insertion locations are randomly chosen from the list of possible locations given by the breast phantom generation code.  The selected location is then passed through checks to ensure that the lesion is within the phantom boundaries, non-overlapping with tissues like air/muscle/nipple/skin, and non-overlapping with already inserted lesions.  This code is available under [Lesion Insertion](https://github.com/DIDSR/VICTRE/tree/master/Lesion%20Insertion).  This code is developed using Python.
