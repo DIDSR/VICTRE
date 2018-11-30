@@ -38,7 +38,7 @@ Breast models are then cropped to a fixed volume to speed up loading and fit the
 
 * **breastMass - cancer mass model - COMING SOON** \
 Breast masses are generated using a procedural generation code.  This model allows for variations in mass size, shape, amount of spiculations, and other characteristics.
-  - source code is available here.
+  - source code is available [here](https://github.com/DIDSR/breastMass).
   - documentation is available in html and pdf formats.
 
 * **Lesion insertion** \
