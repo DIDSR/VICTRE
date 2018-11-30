@@ -39,7 +39,7 @@ Breast models are then cropped to a fixed volume to speed up loading and fit the
 * **breastMass - cancer mass model - COMING SOON** \
 Breast masses are generated using a procedural generation code.  This model allows for variations in mass size, shape, amount of spiculations, and other characteristics.
   - source code is available [here](https://github.com/DIDSR/breastMass).
-  - documentation is available in html and pdf formats.
+  - documentation is available in [html](https://breastcrop.readthedocs.io/en/latest/) and [pdf](https://readthedocs.org/projects/breastmass/downloads/pdf/latest/) formats.
 
 * **Lesion insertion** \
 Lesions are then inserted in a subset of the compressed breast phantom population to create cancer cases.  The lesion insertion locations are randomly chosen from the list of possible locations given by the breast phantom generation code.  The selected location is then passed through checks to ensure that the lesion is within the phantom boundaries, non-overlapping with tissues like air/muscle/nipple/skin, and non-overlapping with already inserted lesions.  This code is available under [Lesion Insertion](https://github.com/DIDSR/VICTRE/tree/master/Lesion%20Insertion).  This code is developed using Python.
