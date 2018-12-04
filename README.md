@@ -60,7 +60,7 @@ The ROIs are then interpreted by in silico readers using a location-known exactl
 VICTRE image datasets
 ---------------------
 
-VICTRE image datasets in DICOM format are available for [download](https://wiki.cancerimagingarchive.net/x/IIJgAg) at the Cancer Imaging Archive.  The images include DM projections, DBT projections and reconstructed volumes.  VICTRE images are converted from Raw to DICOM. Metadata such as the image generation are added as the DICOM tags to allow for reproducibility. DICOM tags include patient information, clinical trial description, imaging study performed per modality and series under each study, and breast type, lesion absence or presence, and compressed breast thickness are included as attributes of the patient.
+VICTRE image datasets in DICOM format are available for [download](https://wiki.cancerimagingarchive.net/x/IIJgAg) at the Cancer Imaging Archive.  The images include DM projections, DBT projections and reconstructed volumes.  VICTRE images are converted from Raw to DICOM (Matlab code available at [raw to DICOM conversion](https://github.com/DIDSR/VICTRE/tree/master/Raw%20to%20DICOM%20conversion)). Metadata such as the image generation are added as the DICOM tags to allow for reproducibility. DICOM tags include patient information, clinical trial description, imaging study performed per modality and series under each study, and breast type, lesion absence or presence, and compressed breast thickness are included as attributes of the patient.
 
 
 The VICTRE container
