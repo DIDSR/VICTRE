@@ -38,5 +38,5 @@ Output
 
 Reference
 ---------
-Badano A, Graff CG, Badal A, Sharma D, Zeng R, Samuelson F, Glick S, Myers K, "Evaluation of Digital Breast Tomosynthesis as Replacement of Full-Field Digital Mammography Using an In Silico Imaging Trial", JAMA Netw Open. 2018;1(7):e185474. *doi:10.1001/jamanetworkopen.2018.5474*
+Badano A, Graff CG, Badal A, Sharma D, Zeng R, Samuelson F, Glick S, Myers K, "Evaluation of Digital Breast Tomosynthesis as Replacement of Full-Field Digital Mammography Using an In Silico Imaging Trial", JAMA Netw Open. 2018; 1(7):e185474. (doi:10.1001/jamanetworkopen.2018.5474)
 
