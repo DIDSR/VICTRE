@@ -24,7 +24,7 @@ VICTRE replicates various steps in silico of the comparative clinical trial. The
 * **breastPhantom - anthropomorphic breast model - COMING SOON** \
 Breast models (in silico subjects) are generated using a procedural analytic model.  The model allows for varying patient characteristics including breast shape, glandularity and density, and size.
   - source code is available [here](https://github.com/DIDSR/breastPhantom).
-  - documentation is available in html and pdf formats.
+  - documentation is available in [html](https://breastphantom.readthedocs.io/en/latest/) and [pdf](https://readthedocs.org/projects/breastphantom/downloads/pdf/latest/) formats.
   
 * **breastCompress - model of physical breast compression - COMING SOON** \
 Breast models are then compressed with use of open-source finite-element software [FEBio](https://febio.org) (separate download).
