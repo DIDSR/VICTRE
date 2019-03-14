@@ -4,7 +4,7 @@
 
 Clinical trails are expensive and delay the regulatory evaluation and early patient access to novel devices. In order to demonstrate an alternative approach, a recent effort at the Division of Imaging, Diagnostics, and Software Reliability at the U.S. Food and Drug Administration (known as the VICTRE project) demonstrated the replication of one such clinical trial using completely in-silico tools and compared results in terms of imaging modality performance between the human trial and the computational trial. The VICTRE trial consisted in imaging 3000 digital breast models in digital mammography and digital breast tomosynthesis system models. On this page we are making all the in silico components of VICTRE freely available to the community.
 
-Citation: ``Evaluation of Digital Breast Tomosynthesis as Replacemnet of Full-Field Digital Mammography Using an In Silico Imaging Trial.'' Aldo Badano, Ph. D., Christian G. Graff, Ph. D., Andreu Badal, Ph. D., Diksha Sharma, M. Sc., Rongping Zeng, Ph. D., Frank W. Samuelson, Ph. D., Stephen Glick, Ph. D., and Kyle J. Myers, Ph. D.  *JAMA Network Open. 2018;1(7):e185474; doi:10.1001/jamanetworkopen.2018.5474*. 
+**Citation:** ''Evaluation of Digital Breast Tomosynthesis as Replacemnet of Full-Field Digital Mammography Using an In Silico Imaging Trial.'' Aldo Badano, Ph. D., Christian G. Graff, Ph. D., Andreu Badal, Ph. D., Diksha Sharma, M. Sc., Rongping Zeng, Ph. D., Frank W. Samuelson, Ph. D., Stephen Glick, Ph. D., and Kyle J. Myers, Ph. D.  *JAMA Network Open. 2018;1(7):e185474; doi:10.1001/jamanetworkopen.2018.5474*. 
 
 
 *VICTRE team: Aldo Badano, Ph. D., Christian G. Graff, Ph. D., Andreu Badal, Ph. D., Diksha Sharma, M. Sc., Rongping Zeng, Ph. D., Frank W. Samuelson, Ph. D., Stephen Glick, Ph. D., and Kyle J. Myers, Ph. D.*
@@ -66,7 +66,7 @@ VICTRE image datasets in DICOM format are available for [download](https://wiki.
 The VICTRE container
 --------------------
 
-...NOTE: We are currently encountering problems integrating the MC-GPU code (which runs on the GPUs) in the Docker. We will make the VICTRE container available as soon as this issue gets resolved.
+*NOTE:* We are currently encountering problems integrating the MC-GPU code (which runs on the GPUs) in the Docker. We will make the VICTRE container available as soon as this issue gets resolved.
 
 Although operating systems (OS) and software platforms have evolved throughout the years, application sharing remains a challenge in deploying across many systems. One of the emerging solution to this issue is to use *containers* - a technology which allows the user to package and isolate a set of processes (applications) with their entire run-time environment.
 
