@@ -21,22 +21,22 @@ The VICTRE pipeline
 
 VICTRE replicates various steps in silico of the comparative clinical trial. The pipeline consists of 9 components:
 
-* **breastPhantom - anthropomorphic breast model - COMING SOON** \
+* **breastPhantom - anthropomorphic breast model** \
 Breast models (in silico subjects) are generated using a procedural analytic model.  The model allows for varying patient characteristics including breast shape, glandularity and density, and size.
   - source code is available [here](https://github.com/DIDSR/breastPhantom).
   - documentation is available in [html](https://breastphantom.readthedocs.io/en/latest/) and [pdf](https://readthedocs.org/projects/breastphantom/downloads/pdf/latest/) formats.
   
-* **breastCompress - model of physical breast compression - COMING SOON** \
+* **breastCompress - model of physical breast compression** \
 Breast models are then compressed with use of open-source finite-element software [FEBio](https://febio.org) (separate download).
   - source code is available [here](https://github.com/DIDSR/breastCompress).
   - documentation is available in [html](https://breastcompress.readthedocs.io/en/latest/) and [pdf](https://readthedocs.org/projects/breastcompress/downloads/pdf/latest/) formats.
 
-* **breastCrop - phantom cropping - COMING SOON** \
+* **breastCrop - phantom cropping** \
 Breast models are then cropped to a fixed volume to speed up loading and fit them in the limited Graphics Processing Units (GPU) memory.
   - source code is available [here](https://github.com/DIDSR/breastCrop).
   - documentation is available in [html](https://breastcrop.readthedocs.io/en/latest/) and [pdf](https://readthedocs.org/projects/breastcrop/downloads/pdf/latest/) formats.
 
-* **breastMass - cancer mass model - COMING SOON** \
+* **breastMass - cancer mass model** \
 Breast masses are generated using a procedural generation code.  This model allows for variations in mass size, shape, amount of spiculations, and other characteristics.
   - source code is available [here](https://github.com/DIDSR/breastMass).
   - documentation is available in [html](https://breastmass.readthedocs.io/en/latest/) and [pdf](https://readthedocs.org/projects/breastmass/downloads/pdf/latest/) formats.
