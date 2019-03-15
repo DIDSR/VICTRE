@@ -53,7 +53,7 @@ VICTRE implemented an filtered back-projection (FBP) reconstruction algorithm fo
 * **Regions/Volumes of interest (ROI/VOIs) extraction** \
 After the images are acquired, lesion-present and lesion-absent ROIs are extracted from the DM images (or VOIs from the DBT volumes).  For extracting lesion-absent ROIs, we applied rigorous checks including if the subimages are within the reconstructed volume boundaries and non-overlapping, to find appropriate locations.  This code is available under [ROI Extraction](https://github.com/DIDSR/VICTRE/tree/master/ROI%20Extraction).  This code is developed using Python.
 
-* **Reader models - COMING SOON** \
+* **Reader models** \
 The ROIs are then interpreted by in silico readers using a location-known exactly paradigm.  Code and instructions of use can be downloaded from [reader models](https://github.com/DIDSR/VICTRE_MO).  This code is written in Matlab.
 
 
