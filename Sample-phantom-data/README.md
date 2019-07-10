@@ -16,3 +16,10 @@ Each folder contains multiple files. In the following filename descriptions *ddd
     The raw lesion inserted, compressed and cropped phantom volume stored as 8-bit unsigned integers in a gzip archive.
 - *mcgpu_image_pcl_nnnnnnnn_crop.raw.gz-dddd_0000.raw* (X-ray image)\
     The raw MCGPU projection image stored as 32-bit real, little-endian byte order.
+    
+    
+    Link to breast phantom/compress
+    phantom dimensions for various densities
+    MCGPU image format - 5 images (link to mcgpu)
+    merging split files
+    Viewing the data
