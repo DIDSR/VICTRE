@@ -1,0 +1,14 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = 2.1750 -55.9263 -20.4407
+CenterOfRotation = 0 0 0
+ElementSpacing = 0.0500 0.0500 0.0500
+DimSize = 810 1920 745
+AnatomicalOrientation = ???
+ElementType = MET_UCHAR
+ObjectType = Image
+ElementDataFile = dense_pc_-321964974_crop.raw

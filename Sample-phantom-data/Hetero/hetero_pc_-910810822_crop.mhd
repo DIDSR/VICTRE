@@ -1,0 +1,14 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = 0.5750 -58.8263 -30.6434
+CenterOfRotation = 0 0 0
+ElementSpacing = 0.0500 0.0500 0.0500
+DimSize = 1280 1950 940
+AnatomicalOrientation = ???
+ElementType = MET_UCHAR
+ObjectType = Image
+ElementDataFile = hetero_pc_-910810822_crop.raw

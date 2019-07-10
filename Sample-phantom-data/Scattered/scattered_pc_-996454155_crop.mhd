@@ -1,0 +1,14 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = 4.8250 -71.4941 -37.9212
+CenterOfRotation = 0 0 0
+ElementSpacing = 0.0500 0.0500 0.0500
+DimSize = 1740 2415 1140
+AnatomicalOrientation = ???
+ElementType = MET_UCHAR
+ObjectType = Image
+ElementDataFile = scattered_pc_-996454155_crop.raw
