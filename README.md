@@ -71,7 +71,7 @@ VICTRE image datasets in DICOM format are available for [download](https://wiki.
 
 Digital mammography projection ROIs dataset is now available at https://github.com/DIDSR/VICTRE_DM_ROIs.
 
-Sample phantoms from the VICTRE trial are now available under [Sample-phantom-data].
+Sample phantoms from the VICTRE trial are now available under [Sample-phantom-data](https://github.com/DIDSR/VICTRE/tree/master/Sample-phantom-data).
 
 
 The VICTRE container
