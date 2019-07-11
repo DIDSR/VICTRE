@@ -1,7 +1,7 @@
 VICTRE sample phantom data
 ---------------------------
 
-We have made available raw data for one phantom from each of the four breast density categories (dense, heterogeneously dense, scattered desnity, and fatty). 
+We have made available raw data for one phantom from each of the four breast density categories (dense, heterogeneously dense, scattered density, and fatty). 
 
 ## Folder information
 
@@ -31,7 +31,7 @@ Phantom dimensions for various densities (this information is available in the .
 1495 1791 1794 (uncompressed) \
 1280 1950 940 (compressed+cropped)
 
-**Scattered desnity** \
+**Scattered density** \
 1918 2227 2168 (uncompressed) \
 1740 2415 1140 (compressed+cropped)
 
