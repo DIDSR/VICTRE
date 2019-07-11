@@ -20,7 +20,7 @@ Each folder contains multiple files. In the following filename descriptions *ddd
     The raw MCGPU projection image stored as 32-bit real, little-endian byte order.  This contains two raw images concatenated - first is the primary+scatter (Compton+Rayleigh+multiple), second image is primary only.  More information available at https://github.com/DIDSR/VICTRE_MCGPU.
     
     
-## Phantom dimensions \
+## Phantom dimensions
 Phantom dimensions for various densities (this information is available in the .mhd files under *DimSize*) \
 
 **Dense**
@@ -39,7 +39,7 @@ Phantom dimensions for various densities (this information is available in the .
 2440 2589 2198 (uncompressed)
 2250 2760 1240 (compressed+cropped)
    
-## Unzipping and merging .gz files \  
+## Unzipping and merging .gz files 
 Following commands can be used on Linux,
 
 Unzipping:
