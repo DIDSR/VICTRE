@@ -18,14 +18,35 @@ Each folder contains multiple files. In the following filename descriptions *ddd
     The raw MCGPU projection image stored as 32-bit real, little-endian byte order.  This contains two raw images concatenated - first is the primary+scatter (Compton+Rayleigh+multiple), second image is primary only.  More information available at https://github.com/DIDSR/VICTRE_MCGPU.
     
     
-   
-    phantom dimensions for various densities
+* **Phantom dimensions** \
+Phantom dimensions for various densities (this information is available in the .mhd files under *DimSize*)
+**Dense**
+1010 1791 1434 (uncompressed)
+810 1920 745 (compressed+cropped)
 
-    merging split files
-    cat file.gz.? > file.gz
-    
-    unzip
-    gunzip file.gz
+**Heterogeneously dense**
+1495 1791 1794 (uncompressed)
+1280 1950 940 (compressed+cropped)
+
+**Scattered desnity**
+1918 2227 2168 (uncompressed)
+1740 2415 1140 (compressed+cropped)
+
+**Fatty**
+2440 2589 2198 (uncompressed)
+2250 2760 1240 (compressed+cropped)
+   
+* **Unzipping and merging .gz files** \  
+Following commands can be used on Linux,
+
+Unzipping:
+$ gunzip file.gz
+
+Merging: Due to Github's file size limitations, some of the phantom raw.gz files were split and need to be merged before use. The split files end with file.gz.?.
+$ cat file.gz.? > file.gz
+
+
+
     
     Viewing the data
     imageJ
