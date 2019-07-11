@@ -19,7 +19,7 @@ Each folder contains multiple files. In the following filename descriptions *ddd
 - *dddd_pcl_nnnnnnnn_crop.raw.gz* (Lesion inserted)\
     The raw lesion inserted, compressed and cropped phantom volume stored as 8-bit unsigned integers in a gzip archive.  More information available at https://github.com/DIDSR/VICTRE/tree/master/Lesion%20Insertion.
 - *mcgpu_image_pcl_nnnnnnnn_crop.raw.gz-dddd_0000.raw* (X-ray image)\
-    The raw MCGPU projection image stored as 32-bit real, little-endian byte order.  This contains two raw images concatenated - first is the primary+scatter (Compton+Rayleigh+multiple), second image is primary only.  More information available at https://github.com/DIDSR/VICTRE_MCGPU.
+    The raw MCGPU projection image stored as 32-bit real, little-endian byte order, with dimensions 3000x1500 pixels.  This contains two raw images concatenated - first is the primary+scatter (Compton+Rayleigh+multiple), second image is primary only.  More information available at https://github.com/DIDSR/VICTRE_MCGPU.
     
     
 ## Phantom dimensions
