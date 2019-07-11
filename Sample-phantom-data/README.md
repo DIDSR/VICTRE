@@ -21,7 +21,7 @@ Each folder contains multiple files. In the following filename descriptions *ddd
     
     
 ## Phantom dimensions
-Phantom dimensions for various densities (this information is available in the .mhd files under *DimSize*)
+Phantom dimensions for various densities (this information is available in the .mhd files under *DimSize*). Lesion inserted phantoms have same dimensions as compressed and cropped.
 
 **Dense** \
 1010 1791 1434 (uncompressed) \
