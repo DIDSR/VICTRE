@@ -77,7 +77,7 @@ Sample phantoms from the VICTRE trial are now available under [Sample-phantom-da
 The VICTRE container
 --------------------
 
-*NOTE:* We are currently encountering problems integrating the MC-GPU code (which runs on the GPUs) in the Docker. We will make the VICTRE container available as soon as this issue gets resolved.
+**NOTE:** We are currently encountering problems integrating the MC-GPU code (which runs on the GPUs) in the Docker. We will make the VICTRE container available as soon as this issue gets resolved.
 
 Although operating systems (OS) and software platforms have evolved throughout the years, application sharing remains a challenge in deploying across many systems. One of the emerging solution to this issue is to use *containers* - a technology which allows the user to package and isolate a set of processes (applications) with their entire run-time environment.
 
