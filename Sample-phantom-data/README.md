@@ -3,7 +3,7 @@ VICTRE sample phantom data
 
 We have made available raw data for one phantom from each of the four breast density categories (dense, heterogeneously dense, scattered density, and fatty). 
 
-## Folder information
+## Folder contents
 
 Each folder contains multiple files. In the following filename descriptions *dddd* represents the density, *nnnnnnnn* represents the seed number:
 - *dddd_p_nnnnnnnn.raw.gz* (Uncompressed)\
