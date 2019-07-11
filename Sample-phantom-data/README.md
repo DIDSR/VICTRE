@@ -46,5 +46,5 @@ Following commands can be used on Linux,
 $ gunzip file.gz
 
 **Merging:** \
-Due to Github's file size limitations, some of the phantom raw.gz files were split and need to be merged before use. The split files end with file.gz.?.
+Due to Github's file size limitations, some of the phantom raw.gz files were split and need to be merged before use. The split files end with file.gz.?. \
 $ cat file.gz.? > file.gz
