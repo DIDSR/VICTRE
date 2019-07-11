@@ -43,12 +43,12 @@ Phantom dimensions for various densities (this information is available in the .
 Following commands can be used on Linux,
 
 **Unzipping:** \
-'''
+```
 $ gunzip file.gz
-'''
+```
 
 **Merging:** \
 Due to Github's file size limitations, some of the phantom raw.gz files were split and need to be merged before use. The split files end with file.gz.?. \
-'''
+```
 $ cat file.gz.? > file.gz
-'''
+```
