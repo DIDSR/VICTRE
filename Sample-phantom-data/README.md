@@ -21,7 +21,7 @@ Each folder contains multiple files. In the following filename descriptions *ddd
     
     
 ## Phantom dimensions
-Phantom dimensions for various densities (this information is available in the .mhd files under *DimSize*) \
+Phantom dimensions for various densities (this information is available in the .mhd files under *DimSize*)
 
 **Dense** \
 1010 1791 1434 (uncompressed) \
@@ -42,13 +42,13 @@ Phantom dimensions for various densities (this information is available in the .
 ## Unzipping and merging .gz files 
 Following commands can be used on Linux,
 
-**Unzipping:** \
+**Unzipping:** 
 ```
 $ gunzip file.gz
 ```
 
-**Merging:** \
-Due to Github's file size limitations, some of the phantom raw.gz files were split and need to be merged before use. The split files end with file.gz.?. \
+**Merging:** 
+Due to Github's file size limitations, some of the phantom raw.gz files were split and need to be merged before use. The split files end with file.gz.?. 
 ```
 $ cat file.gz.? > file.gz
 ```
