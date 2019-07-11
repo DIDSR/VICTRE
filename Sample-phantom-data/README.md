@@ -3,6 +3,8 @@ VICTRE sample phantom data
 
 We have made available raw data for one phantom from each of the four breast density categories (dense, heterogeneously dense, scattered desnity, and fatty). 
 
+## Folder information
+
 Each folder contains multiple files. In the following filename descriptions *dddd* represents the density, *nnnnnnnn* represents the seed number:
 - *dddd_p_nnnnnnnn.raw.gz* (Uncompressed)\
     The raw phantom volume stored as 8-bit unsigned integers in a gzip archive. There is no file header. More informationa available at https://github.com/DIDSR/breastPhantom.
@@ -18,8 +20,9 @@ Each folder contains multiple files. In the following filename descriptions *ddd
     The raw MCGPU projection image stored as 32-bit real, little-endian byte order.  This contains two raw images concatenated - first is the primary+scatter (Compton+Rayleigh+multiple), second image is primary only.  More information available at https://github.com/DIDSR/VICTRE_MCGPU.
     
     
-* **Phantom dimensions** \
-Phantom dimensions for various densities (this information is available in the .mhd files under *DimSize*)
+## Phantom dimensions \
+Phantom dimensions for various densities (this information is available in the .mhd files under *DimSize*) \
+
 **Dense**
 1010 1791 1434 (uncompressed)
 810 1920 745 (compressed+cropped)
@@ -36,7 +39,7 @@ Phantom dimensions for various densities (this information is available in the .
 2440 2589 2198 (uncompressed)
 2250 2760 1240 (compressed+cropped)
    
-* **Unzipping and merging .gz files** \  
+## Unzipping and merging .gz files \  
 Following commands can be used on Linux,
 
 Unzipping:
@@ -44,9 +47,3 @@ $ gunzip file.gz
 
 Merging: Due to Github's file size limitations, some of the phantom raw.gz files were split and need to be merged before use. The split files end with file.gz.?.
 $ cat file.gz.? > file.gz
-
-
-
-    
-    Viewing the data
-    imageJ
