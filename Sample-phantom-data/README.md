@@ -22,4 +22,10 @@ Each folder contains multiple files. In the following filename descriptions *ddd
     phantom dimensions for various densities
 
     merging split files
+    cat file.gz.? > file.gz
+    
+    unzip
+    gunzip file.gz
+    
     Viewing the data
+    imageJ
