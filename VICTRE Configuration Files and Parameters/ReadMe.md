@@ -1,6 +1,6 @@
 # VICTRE - configuration files and command line parameters
 
-Here we share the configurations files and command line parameters used in the VICTRE trial for generating and running the four types of breast phantom densities (dense, heterogeneously dense, scattered density and fatty) through the pipeline. This will be useful for anyone trying to replicate a part or entire VICTRE pipeline.
+Here we share the configurations files and command line parameters used in the VICTRE trial for generating and running the four types of breast phantom densities (dense, heterogeneously dense, scattered density and fatty) through the pipeline. This will be useful for anyone trying to replicate a part of or entire VICTRE pipeline.
 
 
 Disclaimer
