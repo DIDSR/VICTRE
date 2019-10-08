@@ -1,7 +1,7 @@
 
 https://github.com/DIDSR/VICTRE/tree/master/ROI%20Extraction/build.
 
-Focal spot parameters for the four breast densities:\
+##Focal spot parameters for the four breast densities:\
 **DENSE**\
 $FX_x $FX_y $FX_z -> 0 48.25 630
 
@@ -14,17 +14,20 @@ $FX_x $FX_y $FX_z -> 0 60.25 630
 **FATTY**\
 $FX_x $FX_y $FX_z -> 0 69 630
 
-Reconstruction volume dimensions for the four breast densities:\
+##Reconstruction volume dimensions for the four breast densities:\
 **DENSE**\
 $Recon_x $Recon_y $Recon_z -> 1130 477 38 
+
 **HETERO**\
 $Recon_x $Recon_y $Recon_z -> 1148 753 47 
+
 **SCATTERED**\
-$Recon_x $Recon_y $Recon_z -> 1421 1024 57  
+$Recon_x $Recon_y $Recon_z -> 1421 1024 57 
+
 **FATTY**\
 $Recon_x $Recon_y $Recon_z -> 1624 1324 62 
 
-**Extract the following information from the pc_$phantomSeed_crop.mhd**\
+##Extract the following information from the pc_$phantomSeed_crop.mhd\
 $var1 -> ElementSpacing\
 $var2, $var3, $var4 -> Offset\
 $var5, $var6, $var7 -> DimSize
