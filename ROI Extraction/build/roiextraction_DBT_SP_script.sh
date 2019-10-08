@@ -55,9 +55,6 @@
 # Number of slices to add to the center slice to obtain lower bound of VOI for spiculated mass
 # Voxel size for phantom (mm)
 
-## Reconstruction volume dimensions ($Recon_x $Recon_y $Recon_z) for the phantom are written to the console during the execution of the reconstruction code
-## Focal spot dimensions ($FX_x $FX_y $FX_z) in mm.
-
 #!/bin/bash
 
 thisSeed="GIVE THE SEED NUMBER FOR THE PHANTOM TO RUN - TAKEN FROM PHANTOM FILE NAME"
@@ -70,5 +67,5 @@ var2=$(echo $temp2 | cut -d ' ' -f1)
 var3=$(echo $temp2 | cut -d ' ' -f2)
 var4=$(echo $temp2 | cut -d ' ' -f3)
 
-runCmd="time python PATH TO THIS CODE/roiExtraction_DBT_FBP_SP.py $thisSeed $FX_x $FX_y $FX_z 0 $Recon_x $Recon_y $Recon_z 0.085 1 $var2 $var3 $var4 0 0 0 65 109 5 9 2 2 4 4 $var1"
+runCmd="time python PATH TO THIS CODE/roiExtraction_DBT_FBP_SP.py $thisSeed 0 60.25 630 0 1421 1024 57 0.085 1 $var2 $var3 $var4 0 0 0 65 109 5 9 2 2 4 4 $var1"
 $runCmd
