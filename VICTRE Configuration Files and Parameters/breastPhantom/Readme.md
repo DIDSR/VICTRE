@@ -1,0 +1,1 @@
+Attached are the configuration files for generating phantoms for the four breast densities used in the VICTRE trial.  For further details on this code, visit https://breastphantom.readthedocs.io/en/latest/index.html.
