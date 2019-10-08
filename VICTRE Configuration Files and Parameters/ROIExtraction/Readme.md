@@ -31,7 +31,7 @@ $var1 -> ElementSpacing\
 $var2, $var3, $var4 -> Offset\
 $var5, $var6, $var7 -> DimSize
 
-**# Execution command:**\
+**# Execution commands:**\
 **Mammography Signal Present**\
 time python roiExtraction_mammo_SP.py $phantom_seed $FX_x $FX_y $FX_z 0 $var1 0.085 $var2 $var3 $var4 0 0 0 $var5 $var6 $var7 65 109 1500 3000 -20
 
