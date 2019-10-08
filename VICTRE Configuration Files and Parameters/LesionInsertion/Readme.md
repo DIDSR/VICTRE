@@ -3,9 +3,10 @@ Parameters used for inserting lesions in the four breast densitie phantoms in th
 
 **Extract the following information from the pc_$phantomSeed_crop.mhd**
 
-var1 -> ElementSpacing\\
+var1 -> ElementSpacing
 
-var2, var3, var4 -> Offset\\
+var2, var3, var4 -> Offset
+
 var5, var6, var7 -> DimSize
 
 **DENSE**
