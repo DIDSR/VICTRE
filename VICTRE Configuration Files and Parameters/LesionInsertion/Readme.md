@@ -1,4 +1,4 @@
-Parameters used for inserting lesions in the four breast densitie phantoms in the VICTRE trial. For further details on the various parameters, visit https://github.com/DIDSR/VICTRE/tree/master/Lesion%20Insertion/build. 
+Parameters used for inserting lesions in the four breast density phantoms in the VICTRE trial. For further details on the various parameters, visit https://github.com/DIDSR/VICTRE/tree/master/Lesion%20Insertion/build. 
 
 
 **Extract the following information from the pc_$phantomSeed_crop.mhd**\
