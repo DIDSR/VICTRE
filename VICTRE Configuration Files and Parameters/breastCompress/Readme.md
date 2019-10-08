@@ -1,4 +1,4 @@
-Parameters used for the four breast densities in the vICTRE trial. For further details on running this code, visit https://breastcompress.readthedocs.io/en/latest/index.html.
+Parameters used for the four breast densities in the VICTRE trial. For further details on running this code, visit https://breastcompress.readthedocs.io/en/latest/index.html.
 
 **DENSE**
 
