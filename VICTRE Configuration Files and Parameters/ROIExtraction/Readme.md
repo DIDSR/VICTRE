@@ -3,7 +3,7 @@ https://github.com/DIDSR/VICTRE/tree/master/ROI%20Extraction/build.
 
 Focal spot parameters for the four breast densities:
 
-**DENSE**\ 
+**DENSE**\
 $FX_x $FX_y $FX_z -> 0 48.25 630
 
 **HETERO**\
