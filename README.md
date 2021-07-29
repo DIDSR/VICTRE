@@ -2,6 +2,10 @@
 ![](https://user-images.githubusercontent.com/5750606/41682198-0b250648-74a5-11e8-9578-f93602efa5ab.png)\
 ***Virtual Imaging Clinical Trial for Regulatory Evaluation***
 
+<pre>
+<b>UPDATE</b> 
+We have now made available the phantom lesion locations as well as digital mammography and DBT ROI locations. Check out the new Locations folder.
+</pre>
 
 **OPPORTUNITY ANNOUNCEMENT / We are seeking a scientist specialized in computational modeling and simulation of medical imaging systems. Successful applicants will have demonstrated expertise in modeling complex physics and biological systems in the areas of imaging including magnetic resonance and x-ray tomographic methods, and in the multi-scale in silico modeling of anatomy, physiology and pathology. The selected candidate will join an interdisciplinary research team seeking to demonstrate the benefits of in silico methods in the regulatory evaluation of imaging products (see, for instance, JAMA Netw Open. doi:10.1001/jamanetworkopen.2018.5474). For more information, please contact Aldo Badano (aldo.badano@fda.hhs.gov).**
 
@@ -20,12 +24,6 @@ Disclaimer
 
 This software and documentation (the "Software") were developed at the Food and Drug Administration (FDA) by employees of the Federal Government in the course of their official duties. Pursuant to Title 17, Section 105 of the United States Code, this work is not subject to copyright protection and is in the public domain. Permission is hereby granted, free of charge, to any person obtaining a copy of the Software, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, or sell copies of the Software or derivatives, and to permit persons to whom the Software is furnished to do so. FDA assumes no responsibility whatsoever for use by other
 parties of the Software, its source code, documentation or compiled executables, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic. Further, use of this code in no way implies endorsement by the FDA or confers any advantage in regulatory decisions. Although this software can be redistributed and/or modified freely, we ask that any derivative works bear some notice that they are derived from it, and any modified versions bear some notice that they have been modified. 
-
-
-<pre>
-<b>UPDATE</b> 
-Digital mammography projection ROIs dataset is now available at https://github.com/DIDSR/VICTRE_DM_ROIs.
-</pre>
 
 
 The VICTRE pipeline
