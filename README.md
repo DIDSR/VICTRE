@@ -78,6 +78,25 @@ Digital mammography projection ROIs dataset is now available at https://github.c
 
 Sample phantoms from the VICTRE trial are now available under [Sample-phantom-data](https://github.com/DIDSR/VICTRE/tree/master/Sample-phantom-data).
 
+Additional data
+---------------
+
+* **VICTRE configuration files and parameters** \
+
+Contains the configurations files and command line parameters used in the VICTRE trial for generating and running the four types of breast phantom densities (dense, heterogeneously dense, scattered density and fatty) through the pipeline. This will be useful for anyone trying to replicate a part of or the entire VICTRE pipeline.
+
+* **Locations** \
+
+Contains phantom lesion locations in voxels and corresponding DBT locations.  The digital mammography ROI locations are available at https://github.com/DIDSR/VICTRE_DM_ROIs.
+
+* **Sample phantom data** \
+
+Contains raw data for one phantom from each of the four breast density categories.
+
+* **Raw to DICOM conversion** \
+
+Contains Matlab function to convert VICTRE raw data to DICOM.
+
 
 The VICTRE container
 --------------------
