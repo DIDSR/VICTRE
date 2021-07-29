@@ -3,7 +3,7 @@
 ***Virtual Imaging Clinical Trial for Regulatory Evaluation***
 
 <pre>
-<b>UPDATE</b> 
+<b>UPDATE July 29, 2021</b> 
 We have now made available the phantom lesion locations as well as digital mammography and DBT ROI locations. Check out the new Locations folder.
 </pre>
 
