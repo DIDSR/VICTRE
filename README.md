@@ -2,10 +2,11 @@
 ![](https://user-images.githubusercontent.com/5750606/41682198-0b250648-74a5-11e8-9578-f93602efa5ab.png)\
 ***Virtual Imaging Clinical Trial for Regulatory Evaluation***
 
-<pre>
-<b>UPDATE July 29, 2021</b> 
-We have now made available the phantom lesion locations as well as digital mammography and DBT ROI locations. Check out the new Locations folder.
-</pre>
+> **UPDATE Aug 17, 2022**
+> 
+> 1. You can also access the [VICTRE automatic pipeline](https://github.com/DIDSR/VICTRE_PIPELINE) that puts together all the steps on a single Python class.
+> 2. We created a sample VICTRE full pipeline app on precision FDA that [you can access here](https://precision.fda.gov/home/apps/app-GFVKP880Gqb7fqkf8VvfXFkV-1) (needs registration).
+> 
 
 **OPPORTUNITY ANNOUNCEMENT / We are seeking a scientist specialized in computational modeling and simulation of medical imaging systems. Successful applicants will have demonstrated expertise in modeling complex physics and biological systems in the areas of imaging including magnetic resonance and x-ray tomographic methods, and in the multi-scale in silico modeling of anatomy, physiology and pathology. The selected candidate will join an interdisciplinary research team seeking to demonstrate the benefits of in silico methods in the regulatory evaluation of imaging products (see, for instance, JAMA Netw Open. doi:10.1001/jamanetworkopen.2018.5474). For more information, please contact Aldo Badano (aldo.badano@fda.hhs.gov).**
 
@@ -70,7 +71,7 @@ The ROIs are then interpreted by in silico readers using a location-known exactl
 VICTRE datasets
 ---------------
 
-VICTRE image datasets in DICOM format are available for [download](https://wiki.cancerimagingarchive.net/x/IIJgAg) at the Cancer Imaging Archive.  The images include DM projections, DBT projections and reconstructed volumes.  VICTRE images are converted from Raw to DICOM (Matlab code available at [raw to DICOM conversion](https://github.com/DIDSR/VICTRE/tree/master/Raw%20to%20DICOM%20conversion)). Metadata such as the image generation are added as the DICOM tags to allow for reproducibility. DICOM tags include patient information, clinical trial description, imaging study performed per modality and series under each study, and breast type, lesion absence or presence, and compressed breast thickness are included as attributes of the patient.
+VICTRE image datasets in DICOM format are available for [download](http://doi.org/10.7937/TCIA.2019.ho23nxaw) at the Cancer Imaging Archive.  The images include DM projections, DBT projections and reconstructed volumes.  VICTRE images are converted from Raw to DICOM (Matlab code available at [raw to DICOM conversion](https://github.com/DIDSR/VICTRE/tree/master/Raw%20to%20DICOM%20conversion)). Metadata such as the image generation are added as the DICOM tags to allow for reproducibility. DICOM tags include patient information, clinical trial description, imaging study performed per modality and series under each study, and breast type, lesion absence or presence, and compressed breast thickness are included as attributes of the patient.
 
 Digital mammography projection ROIs dataset is now available at https://github.com/DIDSR/VICTRE_DM_ROIs.
 
