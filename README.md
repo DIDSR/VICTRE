@@ -2,6 +2,9 @@
 ![](https://user-images.githubusercontent.com/5750606/41682198-0b250648-74a5-11e8-9578-f93602efa5ab.png)\
 ***Virtual Imaging Clinical Trial for Regulatory Evaluation***
 
+**Note**
+All code is under CC0 (Creative Commons 1.0 Universal License) except for the FBP code that is a derivation of a GPL3 code and remains as GPL3.
+
 > **UPDATE Aug 17, 2022**
 > 
 > 1. You can also access the [VICTRE automatic pipeline](https://github.com/DIDSR/VICTRE_PIPELINE) that puts together all the steps on a single Python class.
