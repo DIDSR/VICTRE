@@ -79,7 +79,7 @@ void cbct_back(double * proj, int ns, int nt, int na, double * betas_rad, double
    double wz = (double(nz-1)/2.d) + offset_xyz[2];
 
    double * xc = (double*)malloc(sizeof(double)*nx*ny);
-   double * yc = (double*)malloc(sizeof(double)*ny*nx-1);
+   double * yc = (double*)malloc(sizeof(double)*ny*nx);
 
 
    for (idx = 0; idx < ny; idx++) {
